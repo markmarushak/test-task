@@ -1,0 +1,296 @@
+
+img {
+	width: 200px;
+	height: 200px;
+}
+@media screen and (max-width: 480px)
+{
+	img {
+		width: 130px;
+		height: 130px;
+	}
+}
+@media screen and (max-width: 413px)
+{
+	img {
+		width: 110px;
+		height: 110px;
+	}
+}
+
+@media screen and (max-width: 320px)
+{
+	img {
+		width: 100px;
+		height: 100px;
+	}
+}
+.border-b {
+	border-bottom: 1px solid;
+}
+.border-t {
+	border-top: 1px solid;
+}
+
+.circle {
+	position:  relative;
+	border-radius: 50%;
+	z-index:  2;
+}
+.top {
+	padding: 30px;
+}
+.manager {
+	margin-top: 20px;
+}
+.name-user {
+	text-transform: capitalize;
+	margin-top: 30px;
+}
+.name-user .name-description {
+	text-transform: none;
+	color: #808080;
+}
+.manager-photo {
+	float: left;
+	margin-right:  11px;
+}
+.name-reviews {
+	position: relative;
+	margin-top: 20px;
+}
+.name-reviews::after {
+ content: "";
+ display: block;
+ position: absolute;
+ width: 100%;
+ top: 0;
+ height: 100%;
+ left: 0;
+ z-index:  1;
+ background: #fffbc8;
+ padding-left:  10px;
+ border:  1px solid #eee;
+ border-radius: 10px 10px 10px 80px
+}
+.name-reviews-block {
+    position: relative;
+    z-index: 2;
+    font-size:  20px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 740px) {
+	.top {
+		padding: 20px;
+	}
+	.name-reviews-block {
+	    font-size:  100%;
+	}
+}
+@media screen and (max-width: 660px) {
+	.name-reviews-block {
+	    font-size:  80%;
+	}
+}
+@media screen and (max-width: 480px) {
+	.top {
+		padding: 0px;
+	}
+	.name-user {
+		font-size: 90%;
+		margin-top: 10px;
+	}
+	.name-user .name-description {
+		font-size: 80%;
+	}
+	.name-reviews {
+		margin-top: 0;
+	}
+	.name-reviews-block {
+		font-size: 70%;
+		padding: 10px 3px;
+	}
+}
+@media screen and (max-width: 414px) {
+	.name-reviews-block {
+		font-size: 60%;
+		padding: 5px 3px;
+	}
+}
+@media screen and (max-width: 374px) {
+	.name-user h5 {
+		font-size: 16px;
+		margin-bottom: 3px;
+	}
+	.name-reviews-block {
+		font-size: 51%;
+	}
+}
+
+
+.diagram > div {
+	padding: 0;
+	left: -7px;
+}
+.diagram table {
+	width: 100%;
+}
+.diagram-map tr td:first-child{
+	position: relative;
+	border-left: 1px solid rgba(0,0,0,.5);
+}
+.diagram-map tr td:first-child span {
+	content: "";
+	position: absolute;
+	display: block;
+	height: 100%;
+	background: #ace2f8;
+	transition: all 0.8s;
+	width: 0;
+	top: 0;
+	z-index: -1;
+	border-radius: 0 5px 5px 0;
+}
+.diagram-map tr:first-child td:first-child span {
+	background: #b1e19b;
+}
+@media screen and (max-width: 425px) { 
+	.diagram td,
+	.diagram th
+	 {
+		font-size: 80%;
+	}
+}
+@media screen and (max-width: 374px) {
+	.diagram td,
+	.diagram th
+	 {
+		font-size: 70%;
+	}
+}
+
+.content {
+	margin-top: 10px;
+}
+.static {
+	font-size: 100%;
+}
+.static-list strong {
+	font-size: 19px;
+}
+.static a.static-link {
+	text-decoration: underline;
+	color: #005da1;
+}
+
+.static .like i,
+.static .comments i {
+	color: #73b4d5;
+}
+@media screen and (max-width: 480px) {
+	.static-list > strong,
+	.static-list > *
+	{
+		font-size: 90%;
+	}
+}
+@media screen and (max-width: 425px) {
+	.static {
+		font-size: 90%;
+	}
+}
+
+@media screen and (max-width: 374px) {
+	.static {
+		font-size: 76%;
+	}
+}
+
+.comment {
+	margin-top: 10px;
+}
+
+.comment-user {
+	text-transform: capitalize;
+}
+.comment-user-name {
+	float: left;
+}
+.comment-user-data {
+	font-size: 11px;
+	color: #808080;
+	display: inline-block;
+}
+.comment-text {
+	position: relative;
+	background: #f2fbff;
+	border: 1px solid #cfcfcf;
+	padding: 10px 20px;
+	margin-bottom: 13px;
+	margin-top:  13px;
+}
+.comment-text::after,
+.comment-text::before
+ {
+	content: '';
+	position: absolute;
+	display: block;
+	top: -10px;
+	width: 0;
+	height: 0;
+}
+.comment-text::after {
+	border: 10px solid transparent;
+	border-bottom: 10px solid #f2fbff;
+	border-left: 10px solid #f2fbff;
+}
+.comment-text::before {
+	border: 5px solid transparent;
+	border-bottom: 5px solid #cfcfcf;
+	border-left: 6px solid #cfcfcf;
+	margin-top:  -1px;
+	margin-left: -1px;
+}
+
+@media screen and (max-width: 425px) {
+	.comment-user-name strong {
+		font-size: 90%;
+	}
+	.comment-text {
+		font-size:  90%;
+	}
+}
+@media screen and (max-width: 375px) {
+	.comment-text {
+		font-size:  80%;
+	}
+}
+
+.sender {
+	background: #f2f2f2;
+	padding: 30px 0;
+}
+.sender textarea {
+	border-radius: 0;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+.sender-button {
+	background: #fdd639;
+	border-radius: 18px;
+	padding: 10px 0;
+	border: none;
+	width: 50%;
+}
+@media screen and (max-width: 425px) {
+	.sender-button {
+		width: auto;
+		padding: 10px 30px;
+	}
+}
+@media screen and (max-width: 375px) {
+	.sender-button {
+		padding: 10px 20px;
+	}
+}

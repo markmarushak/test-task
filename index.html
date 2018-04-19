@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/colors.css">
 	<link rel="stylesheet" href="assets/lib/fontawesome/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="assets/lib/animate/animate.css">
 </head>
 <body>
 	<section class="top">
@@ -161,10 +162,14 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col">
-					<form class="form text-center" method="post">
-						<input type="hidden" name="name" value="Mark">
-						<input id="date" type="hidden" name="date" value="javascript:document.write(Date()+'.')"/>
-						<textarea class="form-control" name="text" id="text" rows="2"></textarea>
+					<form id="form-comments" class="form text-center" method="post">
+						<div class="form-group">
+							<input type="hidden" name="name" value="Mark">
+							<input id="date" type="hidden" name="date" value="">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" name="text" id="text" rows="2" placeholder="Напишите.." required></textarea>
+						</div>
 						<button type="submit" class="sender-button">
 							Написать консультанту
 						</button>
@@ -177,5 +182,7 @@
 	<script src="assets/lib/jquery/jquery-3.3.1.min.js"></script>
 	<script src="assets/js/common.js"></script>
 	<script src="assets/js/diagram.js"></script>
+	<script src="assets/js/moment.js"></script>
+	<script src="assets/js/moment-with-locales.js"></script>
 </body>
 </html>
